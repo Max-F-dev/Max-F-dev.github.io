@@ -10,3 +10,12 @@ section {
 .b {
     background-color: yellow;
 }
+.b#a {
+    background-color: orange;
+}
+section#a {
+    background-color: blue;
+}
+section.b#a {
+    background-color: green;
+}
