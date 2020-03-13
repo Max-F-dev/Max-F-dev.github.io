@@ -4,8 +4,10 @@ body {
 h1 {
     width: 400px;
 }
-span {
+#first {
     color:  red;
     width: 300px;
+    height: 200px;
     font-weight: bold;
+    display: block;
 }
