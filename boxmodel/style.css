@@ -4,3 +4,8 @@ body {
 h1 {
     width: 400px;
 }
+span {
+    color:  red;
+    width: 300px;
+    font-weight: bold;
+}
