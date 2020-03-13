@@ -1,14 +1,13 @@
 body {
-    font-size: 20px;
+  font-size: 20px;
 }
 h1 {
-    width: 400px;
-    border-width: 4px;
-    border-color: black;
-    border-style: dashed;
-    padding: 10px;
+  width: 400px;
+  padding: 5px 10px 15px 20 px;
+  border: solid red 4px;
+  text-align: center;
 }
 #first {
-    color:  red;
-    font-weight: bold;
+  color: red;
+  font-weight: bold;
 }
