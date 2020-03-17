@@ -1,0 +1,15 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    background-color: aqua;
+}
+
+p {
+    width: 800px;
+    height: 900px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgb(55, 156, 85);
+    border-radius: 50px;
+    background: linear-gradient(aqua , rgb(79, 3, 255));    
+}

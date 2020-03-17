@@ -1,7 +1,30 @@
 body > a {
-    background-color: yellow;
+    background: linear-gradient(rgb(197, 199, 181) , rgb(129, 129, 129));
     position: fixed;
     width: 100%;
     left: 0;
     bottom: 0;
+}
+nav {
+    background: linear-gradient(rgb(197, 199, 181) , rgb(129, 129, 129));
+    background-repeat: no-repeat;
+    background-position: center;
+    border: dashed black 2px;
+    border-radius: 10px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 5px;
+    
+}
+a:visited{
+    color: green;
+}
+a{
+    color: white;
+}
+img{
+    padding: 30px 30px;
+    height: 150px;
+    float: right;
+    
 }
