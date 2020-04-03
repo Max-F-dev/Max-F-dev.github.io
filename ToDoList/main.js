@@ -1,13 +1,22 @@
 btnAdd.addEventListener("click", addTodoItem, false);
 
+todoitem.addEventListener("keydown", addTodoItem, false);
+
+btnSave.addEventListener("click", saveTodoList, false)
+
 var todoItems = [];
 
 function addTodoItem(e) {
+  if (e.type == "keydown" && e.keyCode != 13) {
+    return;
+  }
+
   if (todoitem.value.length < 1) {
     alert("You must write something!");
   }
   if (!todoItems.includes(todoitem.value)) {
-    var newTodoItem = document.createElement("li");
+    var newTodoItem =document.createElement("li");
+
 
     newTodoItem.innerText = todoitem.value;
 
@@ -31,5 +40,12 @@ function todoItemDone(e) {
 function todoItemRemove(e) {
   if (confirm("Do you really want to remove the item?")) {
     e.target.remove();
+  }
+}
+
+function saveTodoList(e) {
+  if (todoItems.length != 0) {
+      localStorage.setItem("todolist", JSON.stringify(todoItems));
+      window.alert("TodoList has been saved");
   }
 }
